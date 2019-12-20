@@ -1,0 +1,61 @@
+\ProvidesPackage{myCv}
+\RequirePackage{geometry}
+\RequirePackage{setspace}
+\RequirePackage{fontawesome}
+\RequirePackage{ctex}
+\RequirePackage{enumerate}
+\RequirePackage{varwidth}   % 用于并排放图片
+\RequirePackage{subfigure}
+\RequirePackage{enumitem}
+\RequirePackage{graphicx}
+\RequirePackage{float}
+
+% \geometry{a4paper, scale=0.8}
+
+%self_bar
+\newcommand{\newPartBar}[2]{
+    \begin{spacing}{0.4}
+    \makebox[0.5cm][l]{#1}{\textbf{#2}}
+    \newline
+	\rule{\linewidth}{0.1pt}
+    \newline
+    \end{spacing}
+}
+% basic Info command
+\newcommand{\baseInfoName}[3]{\makebox[#1mm]{}\makebox[#2\linewidth][l]{\textbf{姓\quad 名}:\quad #3}}
+\newcommand{\baseInfoSex}[3]{\makebox[#1mm]{}\makebox[#2\linewidth][l]{\textbf{性\quad 别}:\quad #3}}
+\newcommand{\baseInfoAge}[3]{\makebox[#1mm]{}\makebox[#2\linewidth][l]{\textbf{年\quad 龄}:\quad #3}}
+\newcommand{\baseInfoNation}[3]{\makebox[#1mm]{}\makebox[#2\linewidth][l]{\textbf{民\quad 族}:\quad #3}}
+\newcommand{\baseInfoHome}[3]{\makebox[#1mm]{}\makebox[#2\linewidth][l]{\textbf{籍\quad 贯}:\quad #3}}
+\newcommand{\baseInfoSchool}[3]{\makebox[#1mm]{}\makebox[#2\linewidth][l]{\textbf{学\quad 校}:\quad #3}}
+\newcommand{\baseInfoCollege}[3]{\makebox[#1mm]{}\makebox[#2\linewidth][l]{\textbf{学\quad 院}:\quad #3}}
+\newcommand{\baseInfoMajor}[3]{\makebox[#1mm]{}\makebox[#2\linewidth][l]{\textbf{专\quad 业}:\quad #3}}
+
+% self_add command
+\newcommand{\infoItem}[4]{\makebox[#1mm]{}\makebox[#2\linewidth][l]{\textbf{#3}:\quad #4}}
+
+% self_add pic
+\newcommand{\addPic}[3]{
+\makebox[#1mm]{}
+    \begin{varwidth}[t]{0.3\textwidth}
+    	\vspace{0pt}
+        \qquad\qquad \includegraphics[scale=#2]{#3}
+    \end{varwidth}
+}
+
+
+
+% self_item enviroment
+\newenvironment{myCvItems}
+{
+    \begin{enumerate}
+            \setlength{\topsep}{-\topsep}
+            \vspace{-4pt}
+            \setlength{\itemindent}{4mm}
+            \setlength{\itemsep}{-\itemsep}
+}
+{
+    \end{enumerate}
+    \vspace{3mm}
+}
+

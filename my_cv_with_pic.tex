@@ -1,0 +1,92 @@
+\documentclass[12pt]{article}
+
+\usepackage{myCv}
+
+\geometry{a4paper, scale=0.8}
+
+\begin{document}
+    % 个人基本信息
+    \newPartBar{\faUser}{基本信息}
+    % 个人基本信息的内容
+    \vspace{2mm}
+    \begin{figure}[H]
+    \begin{varwidth}[t]{0.5\textwidth}
+    	\vspace{0pt}
+        \baseInfoName{8}{0.4}{邓竣泽}\baseInfoSex{0}{0.4}{男}
+        \baseInfoAge{8}{0.4}{21}\baseInfoNation{0}{0.4}{汉}
+        \baseInfoHome{8}{0.4}{湖南湘潭}
+        \baseInfoSchool{8}{0.8}{四川大学}
+        \baseInfoMajor{8}{0.8}{物理学(基地班)}
+    \end{varwidth}
+    % 照片
+	\addPic{30}{0.1}{pic/IMG_1430.png}
+
+    \end{figure}
+
+    % 学习Bar
+    \newPartBar{\faPencil}{学习情况}
+    % 学习情况内容
+    \vspace{5mm}
+    % \begin{spacing}{1}
+    \begin{varwidth}[t]{0.8\textwidth}
+        \infoItem{0}{0.4}{加权成绩}{85.36/100}\infoItem{1}{0.5}{GPA}{3.40/4}
+        \infoItem{0}{0.4}{专业排名}{10/86}
+        \infoItem{0}{0.6}{六级成绩}{526}
+        \infoItem{0}{0.6}{托福成绩}{79}   
+    \end{varwidth}
+    % \end{spacing}
+    \vspace{5mm}
+    
+    
+    \newPartBar{\faGift}{主要科目成绩}
+    \vspace{5mm}
+    \begin{varwidth}[t]{0.8\textwidth}
+    \infoItem{0}{0.4}{理论力学}{91} \infoItem{0}{0.4}{电动力学}{79}
+    \infoItem{0}{0.4}{统计物理}{81} \infoItem{0}{0.4}{量子力学}{88}
+    \infoItem{0}{0.4}{固体物理}{85} \infoItem{0}{0.4}{量子场论}{89}
+    \infoItem{0}{0.4}{计算物理}{94} \infoItem{0}{0.4}{数学物理方法}{86}
+	\end{varwidth}
+        
+    \vspace{5mm}
+    % 项目和科研情况
+    \newPartBar{\faCog}{科研经历}
+    % 项目和科研内容
+    \vspace{2mm}
+    \begin{myCvItems}
+            \item 大学生创新创业项目“磁性纳米材料”：评估了微波加热法和溶胶凝胶法制备二维纳米材料的可行性，计算了在掺杂了Fe后GeSe薄膜的物理性质 \hfill 2017-2018
+            \item 大学生创新创业项目（本科毕业设计课题）“两体系统在有限体积中的分立能级”：利用格点计算背景中的立方对称性简化中子散射的实验数据计算\hfill2018-2019 
+    \end{myCvItems}
+
+    % 获奖和证书情况
+    \newPartBar{\faStar}{获奖情况}
+    % 获奖和证书内容
+    \vspace{3mm}
+    \begin{myCvItems}
+            \item 中国科学院物理研究所“严济慈班”奖学金\hfill 2015-2017
+            \item 四川大学综合二等奖学金\hfill 2017-2018  
+            \item 四川大学综合三等奖学金\hfill 2016-2017
+            \item 四川大学数学竞赛三等奖\hfill 2016.6 
+    \end{myCvItems}
+
+    % ---
+    % 个人技能
+    %\newPartBar{\faGift}{个人技能}
+    % 个人技能内容
+    %    \begin{myCvItems}
+    %        \item 较为熟练地吃饭。
+    %        \item 较为熟练地利用\LaTeX 进行菜谱编写。
+    %        \item 较为熟练地使用勺子吃饭。
+    %    \end{myCvItems}
+
+    % ---
+    % 其它方面
+    %\newPartBar{\faHeart}{其他方面}
+    % 其它方面的内容
+    %\begin{myCvItems}
+    %        \item 吃饭
+    %        \item 吃饭
+    %        \item 吃饭
+    %        \item 吃饭
+    %\end{myCvItems}
+    % ---
+\end{document}
